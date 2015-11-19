@@ -25,24 +25,18 @@
         width: 250px;
         height: 85px;
         border-radius: 3px;
-        transition: all 0.3s ease-in;
+        transition: all 0.2s ease-out;
       }
 
       .in {
-        animation: in 1s ease;
+        animation: in 0.25s ease;
         animation-fill-mode: forwards;
       }
 
       @keyframes in {
         0% {
-          transform: translate(110%, 0) rotate(-20deg);
+          transform: translate(70%, 0);
           opacity: 0;
-        }
-        30% {
-          transform: translate(-10%, 0) rotate(5deg);
-        }
-        60% {
-          transform: translate(3%, 0) rotate(-2deg);
         }
         100% {
           transform: none;
